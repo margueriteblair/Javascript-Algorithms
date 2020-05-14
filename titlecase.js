@@ -22,4 +22,13 @@ function titleCase2(str) {
     console.log(newStr.toString());
 }
 
-titleCase2("sHoRt AnD sToUt");
+titleCase2("sHoRt AnD sToUt"); //this version of the code returns "Short,And,Stout"
+
+function titleCase3(str) {
+    let newStr = str.toLowerCase().split(" ");
+    for (i = 0; i < newStr.length; i++) {
+        finalStr = (str.replace(newStr[i][0],newStr[i][0].toUpperCase()));
+        console.log(finalStr);
+        } 
+    }
+ titleCase3("I'm a little tea pot");
