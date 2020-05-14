@@ -10,4 +10,16 @@ function titleCase(str) {
     }
       console.log(newStr.join(" "))
   }
-titleCase("I'm a little tea pot")  
+// titleCase("I'm a little tea pot")  
+// titleCase("sHoRt AnD sToUt")
+
+function titleCase2(str) {
+    let newStr = str.toLowerCase().split(" ")
+    console.log(newStr);
+    for (let i = 0; i < newStr.length; i++) {
+        newStr[i] = newStr[i][0].toUpperCase() + newStr[i].slice(1)
+    }
+    console.log(newStr.toString());
+}
+
+titleCase2("sHoRt AnD sToUt");
