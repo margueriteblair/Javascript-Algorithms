@@ -16,3 +16,5 @@ function frankenSplice(arr1, arr2, n) {
       console.log(arr2);
   }
   frankenSplice2([1, 2, 3], [4, 5, 6], 1);
+
+  //this one returns it with subarrays in it
