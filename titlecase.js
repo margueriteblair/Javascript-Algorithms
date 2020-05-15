@@ -31,4 +31,4 @@ function titleCase3(str) {
         console.log(finalStr);
         } 
     }
- titleCase3("I'm a little tea pot");
+ titleCase3("I'm a little tea pot"); //this one does each one at a time 
