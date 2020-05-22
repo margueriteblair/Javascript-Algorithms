@@ -10,8 +10,8 @@ function titleCase(str) {
     }
       console.log(newStr.join(" "))
   }
-// titleCase("I'm a little tea pot")  
-// titleCase("sHoRt AnD sToUt")
+titleCase("I'm a little tea pot")  
+titleCase("sHoRt AnD sToUt")
 
 function titleCase2(str) {
     let newStr = str.toLowerCase().split(" ")
@@ -47,4 +47,4 @@ function titleCase4(str) {
     console.log(newWord);
 }
 
-titleCase4("I'm a little tea pot") 
+// titleCase4("I'm a little tea pot") 
