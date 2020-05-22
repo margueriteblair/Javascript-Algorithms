@@ -22,7 +22,7 @@ function titleCase2(str) {
     console.log(newStr.toString());
 }
 
-titleCase2("sHoRt AnD sToUt"); //this version of the code returns "Short,And,Stout"
+// titleCase2("sHoRt AnD sToUt"); //this version of the code returns "Short,And,Stout"
 
 function titleCase3(str) {
     let newStr = str.toLowerCase().split(" ");
@@ -31,4 +31,20 @@ function titleCase3(str) {
         console.log(finalStr);
         } 
     }
- titleCase3("I'm a little tea pot"); //this one does each one at a time 
+//  titleCase3("I'm a little tea pot"); //this one does each one at a time 
+
+function titleCase4(str) {
+    str=str.toLowerCase();
+    let newWord = "";
+
+    for (let i = 0; i < str.length; i++) {
+        newWord = newWord + str[i]
+        if (str[i] === " ") {
+            newWord = newWord + str[i+1].toUpperCase()
+            i++
+        }
+    }
+    console.log(newWord);
+}
+
+titleCase4("I'm a little tea pot") 
