@@ -9,5 +9,3 @@ console.log(arr)
   bouncer([7, "ate", "", false, 9]);
   bouncer([false, null, 0, NaN, undefined, ""])
   bouncer([null, NaN, 1, 2, undefined])
-
-  console.log(Boolean(NaN))
