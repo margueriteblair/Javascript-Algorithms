@@ -28,6 +28,16 @@ function chunkArrayInGroups2(arr, size) {
     }
     console.log(chunkedArray)
 }
+// chunkArrayInGroups2(["a", "b", "c", "d"], 2);
+// chunkArrayInGroups2([0, 1, 2, 3, 4, 5, 6, 7, 8], 2)
+  
+function chunkArrayInGroups3(arr, size) {
+    if (arr.length <= size) {
+        console.log(arr)
+    } else {
+        console.log(arr.slice(0, size), ...chunkArrayInGroups3(arr.slice(size), size))
+    }
+}
+
 chunkArrayInGroups2(["a", "b", "c", "d"], 2);
 chunkArrayInGroups2([0, 1, 2, 3, 4, 5, 6, 7, 8], 2)
-  
