@@ -7,3 +7,5 @@ function getNthFib(n) {
   }
 
 getNthFib(6);
+
+//from algo expert
