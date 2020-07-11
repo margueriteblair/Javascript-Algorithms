@@ -1,7 +1,7 @@
 function truncateString(string, number) {
     if (string.length > number) {
-        let truncString = string.slice(0, number);
-        console.log(truncString + "...");
+        let truncString = string.slice(0, number) + "...";
+        console.log(truncString);
     } else console.log(string)
 }
 
