@@ -13,3 +13,15 @@ function getIndexToIns(arr, num) {
   getIndexToIns([40, 60], 50);
   getIndexToIns([5, 3, 20, 3], 5)
   
+
+  function getIndexToIns(arr, num) {
+    arr.push(num);
+    arr = arr.sort(function(a, b) {
+      return a-b;
+    })
+    return (arr.indexOf(num));
+  }
+  
+  getIndexToIns([40, 60], 50);
+  getIndexToIns([3, 10, 5], 3)
+  
