@@ -11,3 +11,10 @@ function reverseString(str) {
     console.log(newStr);
 }
 reverseString("hello");
+
+function reverseString2(str) {
+    str = str.split("").reverse().join("");
+    console.log(str)
+}
+
+reverseString2("CareerDevs")

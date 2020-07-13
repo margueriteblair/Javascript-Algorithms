@@ -10,7 +10,7 @@ function dropElements(arr, func) {
     return arr;
     
   }
-  dropElements([1, 2, 3, 4], function(n) {return n > 5;})
+ // dropElements([1, 2, 3, 4], function(n) {return n > 5;})
 
   function dropElements2(arr, func) {
     for (var i = 0; i < arr.length; i++) {
@@ -25,7 +25,7 @@ function dropElements(arr, func) {
     return arr;
     
   }
-  dropElements2([1, 2, 3, 4], function(n) {return n > 5;})
+  //dropElements2([1, 2, 3, 4], function(n) {return n > 5;})
 
   function dropElements3(arr, func) {
     let i = 0;
@@ -39,3 +39,4 @@ function dropElements(arr, func) {
   dropElements3([1, 2, 3, 4], function(n) {
     return n >= 3;
   });
+  dropElements3([1, 2, 3, 4], function(n) {return n > 5;})
