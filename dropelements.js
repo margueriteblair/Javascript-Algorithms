@@ -26,3 +26,16 @@ function dropElements(arr, func) {
     
   }
   dropElements2([1, 2, 3, 4], function(n) {return n > 5;})
+
+  function dropElements3(arr, func) {
+    let i = 0;
+    while (func(arr[i]) === false) {
+      arr.shift();
+    }
+    console.log(arr)
+    return arr;
+    
+  }
+  dropElements3([1, 2, 3, 4], function(n) {
+    return n >= 3;
+  });
