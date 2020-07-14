@@ -17,6 +17,7 @@ function pairElement(str) {
       chunkedDNAPairs.push(dnaPairs.slice(index, 2+index));
       index+=2;
     }
+    console.log(chunkedDNAPairs);
     return chunkedDNAPairs
   }
   
