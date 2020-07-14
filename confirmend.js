@@ -13,3 +13,11 @@ function confirmEnding2(str, target) {
 }
 confirmEnding2("Bastian", "n");
 
+function confirmEnding3(str, target) {
+    if (str.endsWith(target)) {
+      return true;
+    } else return false;
+  }
+  
+  confirmEnding3("Bastian", "n");
+  
