@@ -41,3 +41,16 @@ function chunkArrayInGroups3(arr, size) {
 
 chunkArrayInGroups2(["a", "b", "c", "d"], 2);
 chunkArrayInGroups2([0, 1, 2, 3, 4, 5, 6, 7, 8], 2)
+
+
+function chunkArrayInGroups4(arr, size) {
+    let i = 0;
+    let chunked = [];
+    while (i < arr.length) {
+      chunked.push(arr.splice(0, size));
+    }
+    console.log(chunked)
+    return chunked;
+  }
+  
+  chunkArrayInGroups4(["a", "b", "c", "d"], 2);
