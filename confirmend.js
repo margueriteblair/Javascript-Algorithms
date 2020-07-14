@@ -20,4 +20,11 @@ function confirmEnding3(str, target) {
   }
   
   confirmEnding3("Bastian", "n");
+
+  function confirmEnding4(str, target) {
+    return str.endsWith(target) ? true : false;
+  
+  }
+  
+  confirmEnding4("Bastian", "n");
   
