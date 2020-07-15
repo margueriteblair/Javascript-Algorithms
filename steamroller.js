@@ -15,4 +15,12 @@ function steamrollArray(arr) {
   }
   
   steamrollArray2([1, [2], [3, [[4]]]]);
+
+  function steamrollArray3(arr) {
+    while (arr.some(Array.isArray)) {
+      arr = [].concat(...arr)
+    }
+    return arr;
+  }
+  steamrollArray3([1, [2], [3, [[4]]]]);
   
