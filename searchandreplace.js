@@ -11,3 +11,19 @@ function myReplace(str, before, after) {
   }
   
   myReplace("He is Sleeping on the couch", "Sleeping", "sitting")
+
+  function myReplace2(str, before, after) {
+    if (before[0].match(/[A-Z]/)) {
+      after = after[0].toUpperCase() + after.slice(1);
+        str = str.replace(before, after);
+        console.log(str)
+        return str;
+    } else {
+        str = str.replace(before, after);
+        console.log(str)
+        return str;
+  
+    }
+  }
+  
+  myReplace2("He is Sleeping on the couch", "Sleeping", "sitting")
