@@ -13,3 +13,13 @@ function uniteUnique(arr) {
   }
   
   uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+  function uniteUnique2(arr) {
+    let args = Array.from(arguments);
+    let myNewArr = args.flat();
+    let unique = [...new Set(myNewArr)]
+    console.log(unique)
+    return unique;
+  }
+  
+  uniteUnique2([1, 3, 2], [5, 2, 1, 4], [2, 1]);
