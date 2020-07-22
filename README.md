@@ -16,3 +16,5 @@ All the the basic algorithms listed below, each uploaded to git as individual fi
 13. Where do I belong
 14. Mutations
 15. Chunky Monkey
+
+All of the intermediate algorithms are listed below:
