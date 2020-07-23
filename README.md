@@ -17,4 +17,25 @@ All the the basic algorithms listed below, each uploaded to git as individual fi
 14. Mutations
 15. Chunky Monkey
 
-All of the intermediate algorithms are listed below:
+All of the intermediate algorithms are listed below, each uploaded to git as individual files:
+1. Sum All Numbers in a Range
+2. Diff Two Arrays
+3. Seek and Destroy
+4. Wherefore art thou
+5. Spinal Tap Case
+6. Pig Latin
+7. Search and Replace
+8. DNA Pairing
+9. Missing Letters
+10. Sorted Union
+11. Convert HTML Entities
+12. Sum All Odd Fibonacci Numbers
+13. Sum all Primes
+14. Smallest Common Multiple
+15. Drop it
+16. Steamroller
+17. Binary Agents
+18. Everything be true
+19. Arguments Optional
+20. Make a person
+21. Map the Debris
