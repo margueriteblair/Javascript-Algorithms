@@ -20,6 +20,26 @@ function smallestCommons(arr) {
       else return gcd(y, x % y);
     }
   }
+
+  function smallestCommons2(arr) {
+    let small = Math.min(...arr);
+    let big = Math.max(...arr);
+    let sol = big;
+    for (let i = big-1; i >= small; i--) {
+      if (sol % i) {
+        sol += big;
+        i = big;
+      }
+    }
+    console.log2(sol)
+    return sol;
+  }
+  
+  
+  
+  
+  smallestCommons([1,5]);
+  
   
   
   
