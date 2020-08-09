@@ -24,15 +24,15 @@ function smallestCommons(arr) {
   function smallestCommons2(arr) {
     let small = Math.min(...arr);
     let big = Math.max(...arr);
-    let sol = big;
-    for (let i = big-1; i >= small; i--) {
-      if (sol % i) {
-        sol += big;
-        i = big;
+    let lcm = big; //LCM starts off as being the largest
+    for (let i = big-1; i >= small; i--) { //you start your for loop off at lcm-1
+      if (lcm % i !== 0) {
+        lcm += big; //5+5
+        i = big; //i stays as a constant in this case
       }
     }
-    console.log2(sol)
-    return sol;
+    console.log2(lcm)
+    return lcm;
   }
   
   
