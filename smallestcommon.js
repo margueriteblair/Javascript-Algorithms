@@ -33,7 +33,10 @@ function smallestCommons(arr) {
       if (lcm % i !== 0) {
         lcm += big; //5+5
         i = big; //i stays as a constant in this case
+        console.log(i + " inside of if statement")
       }
+      console.log(i + " outside if statement")
+
     }
     console.log2(lcm)
     return lcm;
