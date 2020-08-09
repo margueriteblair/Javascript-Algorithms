@@ -21,6 +21,10 @@ function smallestCommons(arr) {
     }
   }
 
+  smallestCommons([1,5]);
+  smallestCommons([23, 18])
+  smallestCommons([5, 1])
+
   function smallestCommons2(arr) {
     let small = Math.min(...arr);
     let big = Math.max(...arr);
@@ -38,12 +42,10 @@ function smallestCommons(arr) {
   
   
   
-  smallestCommons([1,5]);
+  smallestCommons2([1,5]);
   
   
   
   
-  smallestCommons([1,5]);
-  smallestCommons([23, 18])
-  smallestCommons([5, 1])
+
   
