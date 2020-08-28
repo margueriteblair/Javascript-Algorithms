@@ -13,4 +13,4 @@ function pairwise(arr, arg) {
     return sum;
   }
   
-  pairwise([1,4,2,3,0,5], 7);
+console.log(pairwise([1,4,2,3,0,5], 7));

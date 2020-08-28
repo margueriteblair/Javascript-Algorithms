@@ -26,3 +26,19 @@ function convertHTML(str) {
   
   
   convertHTML("Hamburgers < Pizza < Tacos");
+
+
+  function convertHTML2(str) {
+    let characters = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt',
+      '"': '&quot;',
+      "'": '&apos;'
+    }
+    str = str.replace(/&|<|>|'|"/g, i => characters[i])
+    console.log(str)
+    return str;
+  }
+  
+  convertHTML2("Dolce & Gabbana");
