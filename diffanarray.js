@@ -13,6 +13,7 @@ function diffArray(arr1, arr2) {
     console.log(newArr)
     return newArr;
   }
+  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
   function diffArray2(arr1, arr2) {
     //return the symmetric difference of the new array
@@ -32,6 +33,14 @@ function diffArray(arr1, arr2) {
   }
   
   diffArray2([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+  function diffArray3(arr1, arr2) {
+    var newArr = arr1.concat(arr2);
+    newArr = newArr.filter((i) => !arr1.includes(i) || !arr2.includes(i))
+    console.log(newArr)
+    return newArr;
+  }
+  
+  diffArray3([1, 2, 3, 5], [1, 2, 3, 4, 5]);
   
   
-  diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
