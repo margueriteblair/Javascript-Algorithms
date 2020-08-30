@@ -13,16 +13,11 @@ function destroyer(arr) {
   }
   
   destroyer([1, 2, 3, 1, 2, 3], 2, 3);
-  destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
-  destroyer([3, 5, 1, 2, 2], 2, 3, 5)
-  destroyer([2, 3, 2, 3], 2, 3)
-  destroyer(["tree", "hamburger", 53], "tree", 53)
 
   function destroyer2(arr) {
     let destroy = (Object.values(arguments).splice(1))
     arr=arr.filter(i => !destroy.includes(i))
-  
-    console.log(arr)
+
     return arr;
   }
   destroyer2([1, 2, 3, 1, 2, 3], 2, 3);
