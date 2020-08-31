@@ -2,6 +2,7 @@ function smallestCommons(arr) {
     arr = arr.sort(function(a, b) {
       return a-b;
     })
+    console.log(arr)
     for (let i = arr[0]+1; i < arr[1]; i++) {
       arr.push(i)
     }
@@ -21,9 +22,9 @@ function smallestCommons(arr) {
     }
   }
 
-  smallestCommons([1,5]);
-  smallestCommons([23, 18])
-  smallestCommons([5, 1])
+  // smallestCommons([1,5]);
+  // smallestCommons([23, 18])
+  // smallestCommons([5, 1])
 
   function smallestCommons2(arr) {
     let small = Math.min(...arr);
@@ -38,15 +39,33 @@ function smallestCommons(arr) {
       console.log(i + " outside if statement")
 
     }
-    console.log2(lcm)
+    console.log(lcm)
     return lcm;
   }
   
-  
-  
-  
-  smallestCommons2([1,5]);
-  
+//smallestCommons2([1,5]);
+
+function smallestCommons3(arr) {
+    arr.sort((a,b) => a - b)
+    let foundLcm = false;
+    const min = arr[0], max = arr[1];
+    for (let i = max+1; !foundLcm && i < 400000; i++) {
+        let evenlyDivisable = true;
+        //test if i is the lcm (evenly divisable by all numbers between min and the max)
+        for (let j = min; j <= max && evenlyDivisable; j++) {
+            if(
+                !(i % j === 0)
+            ) {
+                evenlyDivisable = false
+            }
+        }
+        if (evenlyDivisable) {
+            console.log('LCM:', i);
+        }
+    }
+    return arr
+}
+smallestCommons3([1, 5])
   
   
   
