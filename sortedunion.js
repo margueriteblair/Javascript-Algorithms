@@ -23,3 +23,12 @@ function uniteUnique(arr) {
   }
   
   uniteUnique2([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+
+  function uniteUnique3(arr) {
+    let totalArr = ((Object.values(arguments)).flat())
+   
+     return([...new Set(totalArr)])
+   }
+   
+   uniteUnique3([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+   
