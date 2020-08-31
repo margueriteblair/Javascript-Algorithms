@@ -19,3 +19,23 @@ function sumFibs(num) {
   }
   
   sumFibs(75025);
+
+  function sumFibs2(num) {
+    let fibonacci = [1, 1]
+    let i = 1;
+    while (fibonacci[i] <= num) {
+      fibonacci.push(fibonacci[i] + fibonacci[i-1])
+      i++
+    }
+   if (fibonacci[fibonacci.length-1] > num) {
+     fibonacci.pop()
+   }
+    fibonacci = fibonacci.filter(i => i%2===1)
+    fibonacci = fibonacci.reduce((a,b) => {
+      return a+b;
+    })
+    return fibonacci
+  }
+  
+  sumFibs2(1000)
+  
