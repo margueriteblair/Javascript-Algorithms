@@ -40,3 +40,12 @@ function dropElements(arr, func) {
     return n >= 3;
   });
   dropElements3([1, 2, 3, 4], function(n) {return n > 5;})
+
+  function dropElements4(arr, func) {
+    while (func(arr[0]) === false) {
+      arr.shift()
+    }
+    return arr;
+  }
+  
+  dropElements4([1, 2, 3], function(n) {return n < 3; });
