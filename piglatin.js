@@ -29,3 +29,16 @@ function translatePigLatin(str) {
 }
 
 translatePigLatin2("consonant");
+
+function translatePigLatin(str) {
+  if (!str[0].match(/[aeiou]/)) {
+    str = str.substring(str.indexOf(str.match(/[aeiuo]/))) + str.substring(0, str.indexOf(str.match(/[aeiuo]/))) + "ay"
+    console.log(str)
+    return str;
+  } else if (str[0].match(/[aeiou]/)) {
+    str = str + "way"
+    return str;
+  }
+}
+
+translatePigLatin("glove")
