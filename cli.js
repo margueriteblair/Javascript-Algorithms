@@ -44,3 +44,19 @@ interface.question("What's your name?", (name) => {
     
 })
 //translateSentence("hello my name is abe")
+
+function pigLatinConcerted() {
+    interface.question("Enter a word or phrase:", (str) => {
+        console.log(`Your pig-latin phrase: ${translateSentence(str)}`);
+        
+        interface.question("Would you like to try again?\n(y/n)", (answer) => {
+            answer = answer.trim().substring(0, 1).toLowerCase();
+
+            if (answer === "y") {
+                pigLatinConcerted();
+            } else {
+                interface.close();
+            }
+        })
+    })
+}
