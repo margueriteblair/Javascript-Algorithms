@@ -1,3 +1,11 @@
+const readLine = require('readline')
+const interface = readLine.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+console.log(interface.question)
+
 function translatePigLatin(str) {
     let vowels = /[a,e,i,o,u]/gi
     let varName = vowels.test(str[0])
@@ -22,4 +30,9 @@ function translateSentence(str) {
     }
 }
 
-translateSentence("hello my name is abe")
+
+interface.question("What's your name?", (answer) => {
+    console.log(`Hello there, ${name}`);
+    
+})
+//translateSentence("hello my name is abe")
