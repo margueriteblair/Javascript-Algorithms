@@ -31,7 +31,7 @@ function translateSentence(str) {
 }
 
 
-interface.question("What's your name?", (answer) => {
+interface.question("What's your name?", (name) => {
     console.log(`Hello there, ${name}`);
     
 })
