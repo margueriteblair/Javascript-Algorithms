@@ -33,6 +33,14 @@ function translateSentence(str) {
 
 interface.question("What's your name?", (name) => {
     console.log(`Hello there, ${name}`);
+
+    interface.question("What's your age?", (number) => {
+        if (age >= 21) {
+            console.log(`wahooo ${name}, drinks on us!`)
+        } else {
+            console.log(`Sorry, buddy. Here's a soda.`)
+        }
+    })
     
 })
 //translateSentence("hello my name is abe")
