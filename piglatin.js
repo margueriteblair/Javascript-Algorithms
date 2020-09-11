@@ -42,3 +42,8 @@ function translatePigLatin(str) {
 }
 
 translatePigLatin("glove")
+
+function translatePigLatin3(str) {
+  return !str[0].match(/[aeiou]/ ? (str = str.substring(str.indexOf(str.match(/[aeiuo]/))) + str.substring(0, str.indexOf(str.match(/[aeiuo]/)) : str = str + "way" 
+
+}
