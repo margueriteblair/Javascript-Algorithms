@@ -16,3 +16,26 @@ function getFinalOpenedDoors(numDoors) {
   }
   
   getFinalOpenedDoors(100)
+
+
+  
+  function getFinalOpenedDoors2 (numDoors) {
+    let doors = [];
+    for(let d = 1; d <= numDoors; d ++){
+      let factors = CalculateFactors(d);
+      if(factors.length % 2 !== 0){//Even factors, door close. Odd factor, door open.
+        doors.push(d);//the final result is only an array with the doors open after 100 times making the exercise
+      }
+    }
+    return doors;
+  }
+  
+  function CalculateFactors(value){
+      let factors = [];
+      for(let i = value; i >= 1; i --){
+          if(value % i === 0){
+              factors.push(i);
+          }
+      }
+      return factors;
+  }
