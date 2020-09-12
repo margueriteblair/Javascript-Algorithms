@@ -23,3 +23,29 @@ function pairElement(str) {
   
   pairElement("GCG");
   pairElement("ATCGA")
+
+  function pairElement2(str) {
+    let DNAPairs = []
+    for (let i = 0; i < str.length; i++) {
+    switch (str[i]) {
+      case "A":
+      DNAPairs.push(["A", "T"])
+      break;
+      case "T":
+      DNAPairs.push(["T", "A"])
+      break;
+      case "G":
+      DNAPairs.push(["G", "C"])
+      break;
+      case "C":
+      DNAPairs.push(["C", "G"])
+      break;
+    }
+  
+    }
+    console.log(DNAPairs)
+    return DNAPairs
+  }
+  
+  pairElement2("GCG");
+  
