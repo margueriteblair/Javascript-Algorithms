@@ -48,4 +48,20 @@ function pairElement(str) {
   }
   
   pairElement2("GCG");
+
+  function pairElement3(str) {
+    let pairs = {
+      A: "T",
+      T: "A",
+      C: "G",
+      G: "C"
+    }
+  
+    let pairsArr = str.split("").map(i => [i, pairs[i]])
+    console.log(pairsArr)
+    return pairsArr
+  }
+  
+  pairElement3("GCG");
+  
   
