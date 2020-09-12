@@ -26,7 +26,6 @@ function uniteUnique(arr) {
 
   function uniteUnique3(arr) {
     let totalArr = ((Object.values(arguments)).flat())
-   
      return([...new Set(totalArr)])
    }
    

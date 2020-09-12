@@ -56,7 +56,6 @@ function fearNotLetter(str) {
   
       }
     }
-    return str;
   }
   
   fearNotLetter4("bcdf")
