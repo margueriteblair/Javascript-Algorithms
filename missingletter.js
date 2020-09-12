@@ -42,3 +42,24 @@ function fearNotLetter(str) {
   
   fearNotLetter3("abce");
   fearNotLetter3("abcdefghjklmno")
+
+  function fearNotLetter4(str) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz"
+    if (alphabet.includes(str)) {
+      return undefined;
+    } else {
+      for (let i = 0; i < str.length; i++) {
+        if (alphabet.indexOf(str[i])-alphabet.indexOf(str[i-1]) === 2 && alphabet.indexOf(str[i-1]) != -1) {
+    console.log(alphabet[alphabet.indexOf(str[i]) - 1])
+    return (alphabet[alphabet.indexOf(str[i]) - 1])
+        }
+  
+      }
+    }
+    return str;
+  }
+  
+  fearNotLetter4("bcdf")
+  fearNotLetter4("abcdefghjklmno")
+  fearNotLetter4("stvwx")
+  
