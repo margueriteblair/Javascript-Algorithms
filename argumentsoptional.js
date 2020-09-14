@@ -54,3 +54,13 @@ function addTogether() {
   }
   
   addTogether3(2, 3);
+
+  function addTogether4(first, second) {
+    if (typeof first !== "number") {
+      return undefined;
+    }
+    const sum = second =>
+      typeof second === "number" ? first + second : undefined;
+    return typeof second === "undefined" ? second => sum(second) : sum(second);
+  }
+  addTogether4(2, 3);
