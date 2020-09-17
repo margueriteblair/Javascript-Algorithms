@@ -27,4 +27,14 @@ function confirmEnding3(str, target) {
   }
   
   confirmEnding4("Bastian", "n");
+
+  function confirmEnding(str, target) {
+    if ((str.slice(str.length-target.length)) === target) {
+      return true
+    } else return false
+  }
+  
+  confirmEnding("Bastian", "n");
+  confirmEnding("Congratulation", "on")
+  confirmEnding("He has to give me a new name", "name")
   
