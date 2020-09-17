@@ -59,7 +59,24 @@ function palindrome(str) {
       }
     }
     return true;
+
+  }
+
+  
+
+  function palindrome4(str) {
+    str = str.toLowerCase().split("").filter(char => char.match(/[a-z0-9]/g)).join("")
+    console.log(str)
+    let strLen = str.length - 1
+    for (let i = 0; i < strLen; i++) {
+      if (str[i] !== str[strLen - i]) return false
+    }
+    return true;
   }
   
+  
+  
+  
+  palindrome4("My age is 0, 0 si ega ym.")
   
   
