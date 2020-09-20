@@ -18,3 +18,13 @@ function frankenSplice(arr1, arr2, n) {
   frankenSplice2([1, 2, 3], [4, 5, 6], 1);
 
   //this one returns it with subarrays in it
+
+  function frankenSplice3(arr1, arr2, n) {
+    let newArr = arr2.slice()
+    newArr.splice(n, 0, ...arr1)
+    console.log(newArr)
+    return newArr
+  }
+  
+  frankenSplice3([1, 2, 3], [4, 5, 6], 1);
+  frankenSplice3([1, 2, 3], [4, 5], 1)
